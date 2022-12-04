@@ -355,5 +355,5 @@ int main(int argc, char** argv) {
   std::chrono::duration<double> p1_t = t1 - t0;
   std::chrono::duration<double> p2_t = t2 - t1;
   // sum should be 0 at the end here
-  printf("priority: %f priority2: %f sum:%lu\n", p1_t.count(), p2_t.count(), sum);
+  printf("day3 bench: priority: %f priority(branchless): %f sum:%lu\n", p1_t.count(), p2_t.count(), sum);
 }
