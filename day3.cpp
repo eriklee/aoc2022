@@ -1,3 +1,4 @@
+#include <bit>
 #include <cassert>
 #include <cstdint>
 #include <fstream>
@@ -11,7 +12,7 @@ uint64_t priority(char c) {
 int priorityToNum(uint64_t p) {
   uint64_t res = 0;
   while (p != 0) {
-    int n = __builtin_ctzl(p);
+    int n = std::countr_zero(p);
     res += n;
     p ^= (1ul << n);
   }
@@ -63,7 +64,7 @@ int main(int argc, char **argv) {
       assert(std::getline(file, l));
       common &= catalogueItems(l);
       // printf("%s -> %d\n", l.c_str(), priorityToNum(common));
-      assert(__builtin_popcountl(common) == 1);
+      assert(std::has_single_bit(common) == 1);
 
       sum += priorityToNum(common);
     }
