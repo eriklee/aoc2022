@@ -8,3 +8,4 @@
 ./bins/day3
 ./bins/day4
 ./bins/day5
+./bins/day6
