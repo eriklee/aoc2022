@@ -9,4 +9,5 @@
 #./bins/day4
 #./bins/day5
 #./bins/day6
-./bins/day7
+#./bins/day7
+./bins/day8
