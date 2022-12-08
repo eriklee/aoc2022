@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <boost/range/adaptors.hpp>
 
 int main(int argc, char **argv) {
   std::ifstream file("inp/day8.txt");
@@ -18,8 +19,11 @@ int main(int argc, char **argv) {
     // Part 1
     std::vector<std::vector<bool>> visible_grid;
     // l -> r, r -> l
-    for (int ridx = 0; ridx < input.size(); ridx++) {
-      const auto& row = input[ridx];
+    for (const auto& rit : boost::adaptors::index(input)) {
+    //for (int ridx = 0; ridx < input.size(); ridx++) {
+      const auto ridx = rit.index();
+      const auto& row = rit.value();
+
       visible_grid.push_back({});
       visible_grid.back().resize(row.size(), false);
 
