@@ -9,4 +9,5 @@ mkdir -p bins
 #clang++ -g -o bins/day7 -Wall -O3 --std=c++20 -lfmt day7.cpp
 #clang++ -g -o bins/day8 -Wall -O3 --std=c++20 -lfmt -lboost_system day8.cpp
 #clang++ -g -o bins/day9 -Wall -O3 --std=c++20 -lfmt -lboost_system day9.cpp
-clang++ -g -o bins/day10 -Wall -O3 --std=c++20 -lfmt day10.cpp
+#clang++ -g -o bins/day10 -Wall -O3 --std=c++20 -lfmt day10.cpp
+clang++ -g -o bins/day11 -Wall -O0 --std=c++20 -lfmt day11.cpp

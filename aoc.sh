@@ -12,4 +12,5 @@
 #./bins/day7
 #./bins/day8
 #./bins/day9
-./bins/day10
+#./bins/day10
+./bins/day11
