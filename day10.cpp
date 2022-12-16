@@ -71,5 +71,5 @@ int main(int argc, char **argv) {
       fmt::print("\n");
     }
   }
-  fmt::print("Day10: Part1: {}", signalSums);
+  fmt::print("Day10: Part1: {}\n", signalSums);
 }
