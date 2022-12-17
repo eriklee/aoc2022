@@ -1,6 +1,6 @@
 mkdir -p bins
-#ghc -O day1 && mv day1 bins/
-#ghc -O day2 && mv day2 bins/
+#ghc -hidir bins/ -o bins/day1 -odir bins -O3 day1.hs
+#ghc -hidir bins/ -o bins/day2 -odir bins -O3 day2.hs
 #clang++ -g -o bins/day3 -Wall -O3 --std=c++20 day3.cpp
 #clang++ -g -o bins/day3_bench -Wall -O3 --std=c++20 day3_bench.cpp
 #clang++ -g -o bins/day4 -Wall -O3 --std=c++20 -lfmt day4.cpp
@@ -12,6 +12,6 @@ mkdir -p bins
 #clang++ -g -o bins/day10 -Wall -O3 --std=c++20 -lfmt day10.cpp
 #clang++ -g -o bins/day11 -Wall -O3 --std=c++20 -lfmt day11.cpp
 #clang++ -g -o bins/day12 -Wall -O3 --std=c++20 -lfmt day12.cpp
-clang++ -g -o bins/day13 -Wall -O1 --std=c++20 -lfmt day13.cpp
+ghc -hidir bins/ -o bins/day13 -odir bins -O3 day13.hs
 
 # -fsanitize=undefined -fsanitize=address 
