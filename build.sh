@@ -18,4 +18,4 @@ OPTS="-Wall --std=c++20 -lfmt -g -O3"
 #clang++ $OPTS -o bins/day11 day11.cpp
 #clang++ $OPTS -o bins/day12 day12.cpp
 #ghc -hidir bins/ -o bins/day13 -odir bins -O3 day13.hs
-clang++ $DBG_OPTS -o bins/day14 day14.cpp
+clang++ $OPTS -o bins/day14 day14.cpp
