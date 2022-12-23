@@ -143,7 +143,7 @@ int part2(const std::unordered_map<std::string, std::unordered_map<std::string, 
       auto ele = part1_go(distances, map, 26, 0, "AA", interesting2);
       if (me.first + ele.first > best) {
         best = me.first + ele.first;
-        fmt::print("New best {} ({} + {}): [{}] / [{}]\n", best, me.first, ele.first, fmt::join(me.second, ","), fmt::join(ele.second, ","));
+        // fmt::print("New best {} ({} + {}): [{}] / [{}]\n", best, me.first, ele.first, fmt::join(me.second, ","), fmt::join(ele.second, ","));
       }
     }
     return best;
