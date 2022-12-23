@@ -1,7 +1,7 @@
 set -x
 mkdir -p bins
 
-DBG_OPTS="-fsanitize=undefined -fsanitize=address -Wall --std=c++20 -lfmt -g -O0"
+DBG_OPTS="-fsanitize=undefined -fsanitize=address -Wall --std=c++20 -lfmt -gdwarf -O1"
 OPTS="-Wall --std=c++20 -lfmt -g -O3"
 
 #ghc -hidir bins/ -o bins/day1 -odir bins -O3 day1.hs
@@ -19,4 +19,5 @@ OPTS="-Wall --std=c++20 -lfmt -g -O3"
 #clang++ $OPTS -o bins/day12 day12.cpp
 #ghc -hidir bins/ -o bins/day13 -odir bins -O3 day13.hs
 #clang++ $OPTS -o bins/day14 day14.cpp
-clang++ $DBG_OPTS -o bins/day15 day15.cpp
+#clang++ $OPTS -o bins/day15 day15.cpp
+clang++ $OPTS -o bins/day16 day16.cpp
