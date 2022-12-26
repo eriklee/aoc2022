@@ -21,4 +21,5 @@ OPTS="-Wall --std=c++20 -lfmt -g -O3"
 #clang++ $OPTS -o bins/day14 day14.cpp
 #clang++ $OPTS -o bins/day15 day15.cpp
 #clang++ $OPTS -o bins/day16 day16.cpp
-clang++ $OPTS -o bins/day17 day17.cpp
+#clang++ $OPTS -o bins/day17 day17.cpp
+clang++ $OPTS -o bins/day18 day18.cpp
